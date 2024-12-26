@@ -24,7 +24,7 @@ The Music Portal is a feature-rich web application developed using Django. It al
 ## Setup Instructions
 
 ### Clone the Repository
-```bash
+bash
 git clone https://github.com/Priyaladdi33/music-portal.git
 cd music-portal
 
