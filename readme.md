@@ -28,12 +28,11 @@ The Music Portal is a feature-rich web application developed using Django. It al
 git clone https://github.com/Priyaladdi33/music-portal.git
 cd music-portal
 
-
 1. **Clone the Repository**
    ```bash
    git clone <repository-url>
    cd music-portal
-   ```
+   
 
 2. **Create and Activate a Virtual Environment**
    ```bash
