@@ -69,16 +69,56 @@ cd music-portal
 ## Project Structure
 ```
 MusicPortal/
-├── accounts/            # App for user authentication
-├── musicApp/            # Main app for managing songs
-│   ├── migrations/      # Database migrations
-│   ├── templates/       # HTML templates
-│   ├── static/          # Static files (CSS, JS, images)
-│   └── models.py        # Song model definition
-├── media/               # Media files (uploaded images and songs)
-├── requirements.txt     # Project dependencies
-├── manage.py            # Django management script
-└── README.md            # Project documentation
+│
+├── __pycache__/                         # Python bytecode cache directory
+├── __init__.py                           # Marks this directory as a Python package
+├── asgi.py                               # ASGI configuration
+├── settings.py                           # Django settings
+├── urls.py                               # Main URL routing
+├── wsgi.py                               # WSGI configuration
+│
+├── accounts/                             # 'accounts' app
+│   ├── __pycache__/                      # Python bytecode cache directory
+│   ├── migrations/                       # Database migrations
+│   ├── templates/                        # Template files for 'accounts' app
+│   │   └── accounts/                     # Template directory for 'accounts'
+│   ├── __init__.py                       # Marks this directory as a Python package
+│   ├── admin.py                          # Admin panel configuration for 'accounts'
+│   ├── apps.py                           # App configuration for 'accounts'
+│   ├── models.py                         # Models for the 'accounts' app
+│   ├── tests.py                          # Test cases for 'accounts'
+│   ├── urls.py                           # URL routing for 'accounts' app
+│   └── views.py                          # Views for 'accounts' app
+│
+├── musicApp/                             # 'musicApp' app
+│   ├── __pycache__/                      # Python bytecode cache directory
+│   ├── migrations/                       # Database migrations
+│   ├── templates/                        # Template files for 'musicApp'
+│   │   └── musicApp/                     # Template directory for 'musicApp'
+│   │       ├── english.html              # English page template
+│   │       ├── hindi.html                # Hindi page template
+│   │       ├── index.html                # Homepage template
+│   │       └── kannada.html              # Kannada page template
+│   ├── __init__.py                       # Marks this directory as a Python package
+│   ├── admin.py                          # Admin panel configuration for 'musicApp'
+│   ├── apps.py                           # App configuration for 'musicApp'
+│   ├── models.py                         # Models for the 'musicApp'
+│   ├── tests.py                          # Test cases for 'musicApp'
+│   ├── urls.py                           # URL routing for 'musicApp'
+│   └── views.py                          # Views for 'musicApp'
+│
+├── static/                               # Static files
+│   └── css/
+│       └── styles.css                    # CSS styles
+│
+├── staticfiles/                          # Compiled static files (created by Django)
+├── templates/                            # Global templates directory
+│   └── base_generic.html                 # Base template
+├── media/                                # Media files (e.g., images, music files)
+├── db.sqlite3                            # SQLite database
+├── manage.py                             # Django management script
+└── readme.md                             # Project documentation (README)
+
 ```
 
 ## Usage
